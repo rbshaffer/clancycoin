@@ -1,7 +1,7 @@
 ClancyCoin
 =====================================
 
-![ClancyCoin](https://raw.githubusercontent.com/tmagrino/clancycoin/doc/clancycoin.jpg)
+![ClancyCoin](https://github.com/tmagrino/clancycoin/blob/master/doc/clancycoin.jpg?raw=true)
 
 What is ClancyCoin?
 ----------------
