@@ -1,10 +1,10 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The Clancycoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_RPC_SERVER_H
-#define BITCOIN_RPC_SERVER_H
+#ifndef CLANCYCOIN_RPC_SERVER_H
+#define CLANCYCOIN_RPC_SERVER_H
 
 #include <amount.h>
 #include <rpc/protocol.h>
@@ -130,7 +130,7 @@ public:
 };
 
 /**
- * Bitcoin RPC command dispatcher.
+ * Clancycoin RPC command dispatcher.
  */
 class CRPCTable
 {
@@ -183,4 +183,4 @@ std::string JSONRPCExecBatch(const JSONRPCRequest& jreq, const UniValue& vReq);
 // Retrieves any serialization flags requested in command line argument
 int RPCSerializationFlags();
 
-#endif // BITCOIN_RPC_SERVER_H
+#endif // CLANCYCOIN_RPC_SERVER_H

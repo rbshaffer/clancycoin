@@ -1,13 +1,13 @@
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The Clancycoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/clancycoin-config.h>
 #endif
 
 #include <interfaces/node.h>
-#include <qt/bitcoin.h>
+#include <qt/clancycoin.h>
 #include <qt/test/apptests.h>
 #include <qt/test/rpcnestedtests.h>
 #include <qt/test/uritests.h>
@@ -64,8 +64,8 @@ int main(int argc, char *argv[])
 
     // Don't remove this, it's needed to access
     // QApplication:: and QCoreApplication:: in the tests
-    BitcoinApplication app(*node, argc, argv);
-    app.setApplicationName("Bitcoin-Qt-test");
+    ClancycoinApplication app(*node, argc, argv);
+    app.setApplicationName("Clancycoin-Qt-test");
 
     SSL_library_init();
 
