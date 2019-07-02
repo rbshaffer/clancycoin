@@ -1,6 +1,7 @@
 theme: jekyll-theme-architect
 title: ClancyCoin
 description: A (Joke) Fork of Bitcoin Core
+show_downloads: true
 collections:
         authors:
                 output: true
