@@ -15,9 +15,9 @@ ClancycoinUnits::ClancycoinUnits(QObject *parent):
 QList<ClancycoinUnits::Unit> ClancycoinUnits::availableUnits()
 {
     QList<ClancycoinUnits::Unit> unitlist;
-    unitlist.append(BTC);
-    unitlist.append(mBTC);
-    unitlist.append(uBTC);
+    unitlist.append(CLC);
+    unitlist.append(mCLC);
+    unitlist.append(uCLC);
     unitlist.append(SAT);
     return unitlist;
 }
@@ -26,9 +26,9 @@ bool ClancycoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case BTC:
-    case mBTC:
-    case uBTC:
+    case CLC:
+    case mCLC:
+    case uCLC:
     case SAT:
         return true;
     default:
@@ -40,9 +40,9 @@ QString ClancycoinUnits::longName(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("BTC");
-    case mBTC: return QString("mBTC");
-    case uBTC: return QString::fromUtf8("µBTC (bits)");
+    case CLC: return QString("CLC");
+    case mCLC: return QString("mCLC");
+    case uCLC: return QString::fromUtf8("µCLC (bits)");
     case SAT: return QString("Satoshi (sat)");
     default: return QString("???");
     }
@@ -52,7 +52,7 @@ QString ClancycoinUnits::shortName(int unit)
 {
     switch(unit)
     {
-    case uBTC: return QString::fromUtf8("bits");
+    case uCLC: return QString::fromUtf8("bits");
     case SAT: return QString("sat");
     default: return longName(unit);
     }
@@ -62,9 +62,9 @@ QString ClancycoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Clancycoins");
-    case mBTC: return QString("Milli-Clancycoins (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Clancycoins (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case CLC: return QString("Clancycoins");
+    case mCLC: return QString("Milli-Clancycoins (1 / 1" THIN_SP_UTF8 "000)");
+    case uCLC: return QString("Micro-Clancycoins (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     case SAT: return QString("Satoshi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
@@ -74,9 +74,9 @@ qint64 ClancycoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case BTC: return 100000000;
-    case mBTC: return 100000;
-    case uBTC: return 100;
+    case CLC: return 100000000;
+    case mCLC: return 100000;
+    case uCLC: return 100;
     case SAT: return 1;
     default: return 100000000;
     }
@@ -86,9 +86,9 @@ int ClancycoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case BTC: return 8;
-    case mBTC: return 5;
-    case uBTC: return 2;
+    case CLC: return 8;
+    case mCLC: return 5;
+    case uCLC: return 2;
     case SAT: return 0;
     default: return 0;
     }

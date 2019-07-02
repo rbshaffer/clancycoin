@@ -150,7 +150,7 @@ bool parseClancycoinURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!ClancycoinUnits::parse(ClancycoinUnits::BTC, i->second, &rv.amount))
+                if(!ClancycoinUnits::parse(ClancycoinUnits::CLC, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -183,7 +183,7 @@ QString formatClancycoinURI(const SendCoinsRecipient &info)
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(ClancycoinUnits::format(ClancycoinUnits::BTC, info.amount, false, ClancycoinUnits::separatorNever));
+        ret += QString("?amount=%1").arg(ClancycoinUnits::format(ClancycoinUnits::CLC, info.amount, false, ClancycoinUnits::separatorNever));
         paramCount++;
     }
 

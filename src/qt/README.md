@@ -60,7 +60,7 @@ Represents the view to a single wallet.
 
 * UI elements like ClancycoinAmountField, which inherit from QWidget.
 * `clancycoinstrings.cpp`: automatically generated
-* `clancycoinunits.(h/cpp)`: BTC / mBTC / etc handling
+* `clancycoinunits.(h/cpp)`: CLC / mCLC / etc handling
 * `callback.h`
 * `guiconstants.h`: UI colors, app name, etc
 * `guiutil.h`: several helper functions
